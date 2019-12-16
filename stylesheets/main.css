@@ -1,0 +1,147 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Girassol', cursive;
+}
+
+#background-image {
+    min-height: 100%;
+    min-width: 1080px;
+    width: 100%;
+    height: auto;
+}
+
+.form-control {
+    --input-form-width: 300px;
+    position: absolute;
+    left: calc(50% - var(--input-form-width) / 2);
+    width: var(--input-form-width) !important;
+    text-align: center;
+}
+
+#input-form1 {
+    top: 265px;
+    margin-left: 12.5px;
+}
+
+#input-form1:focus {
+    outline: none !important;
+    box-shadow: 0px 0px 10px #e06761 !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.heading {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    color: #da4c45;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+#heading1 {
+    top: 120px;
+    text-shadow: 1.5px 1.5px #e06761;
+}
+
+#submit {
+    --submit-sizing: 120px;
+    position: absolute;
+    top: 400px;
+    left: calc(50% - var(--submit-sizing) / 2);
+    width: var(--submit-sizing);
+    height: var(--submit-sizing);
+    margin-left: 12.5px;
+    background: #da4c45;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#submit:hover {
+    background: #e06761;
+    color: grey;
+}
+
+#submit:focus {
+    outline: none;
+}
+
+#submit-text {
+    font-size: 2.25rem;
+}
+
+#tip {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 330px;
+}
+
+.entry {
+    --entry-width: 170px;
+    margin: 15px;
+    position: absolute;
+    display: inline-block;
+    border-radius: 8px;
+    width: var(--entry-width);
+    height: 50px;
+    top: -78px;
+    background: #da4c45;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.p-card {
+    position: absolute;
+    top: -78px;
+    left: 35px;
+    z-index: 10;
+    width: 160px;
+    text-align: center;
+    color: white;
+}
+
+.flake-small {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: -100px;
+    background: none;
+    z-index: 10;
+}
+
+.flake-medium {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: -100px;
+    background: none;
+    filter: blur(1px);
+}
+
+.flake-large {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    top: -100px;
+    background: none;
+    filter: blur(2.1px);
+}
+
+.flake-medium, .flake-large {
+    z-index: 0;
+    pointer-events: none;
+}
+
+#back {
+    position: absolute;
+    left: 51px;
+    width: 430px;
+    text-align: left;
+}
+
+#back:hover {
+    color: #e06761;
+}
